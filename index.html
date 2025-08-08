@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PixBee é uma ferramenta que permite gerar cobranças Pix via linha de comando, integrando facilmente com diversos PSPs. Ideal para sistemas legados como Delphi, VB6, ERP e automações.">
+  <meta name="keywords" content="Pix, cobrança Pix, integração Pix, PSP, Delphi, ERP, Pix via .exe, GerenciaNet, Banco do Brasil, QR Code Pix, sistema legado, automação Pix">
+  <meta name="author" content="PixBee">
+  <title>PixBee - Integre Pix com qualquer sistema</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #ffc107;
+      padding: 2em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+    main {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form {
+      margin-top: 2em;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 0.5em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 1.5em;
+      background-color: #ffc107;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e0a800;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PixBee</h1>
+    <p>Integre cobranças Pix em qualquer sistema com um simples arquivo .json</p>
+  </header>
+
+  <main>
+    <h2>O que é o PixBee?</h2>
+    <p>PixBee é um executável (.exe) que permite gerar cobranças Pix dinâmicas com diferentes PSPs, de forma simples e sem precisar lidar com APIs complicadas. Ideal para sistemas legados (Delphi, VB6, etc.) ou integrações rápidas via linha de comando.</p>
+
+    <h2>Como funciona?</h2>
+    <ol>
+      <li>Você gera um arquivo .json com os dados da cobrança</li>
+      <li>Executa o comando: <code>pixbee.exe parametros.json</code></li>
+      <li>Recebe o Pix pronto para uso: chave copia-e-cola, QR code e status</li>
+    </ol>
+
+    <h2>Formulário de Interesse</h2>
+		<form action="https://formsubmit.co/eliezerfb@gmail.com" method="POST">
+		  <label for="name">Nome:</label>
+		  <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+		  <label for="email">E-mail:</label>
+		  <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+		  <label for="segmento">Qual o seu segmento?</label>
+		  <select id="segmento" name="segmento">
+			<option>Desenvolvedor</option>
+			<option>Casa de Software</option>
+			<option>ERP</option>
+			<option>Freelancer</option>
+			<option>Outro</option>
+		  </select>
+
+		  <label for="psp">Qual PSP você utiliza?</label>
+		  <input type="text" id="psp" name="psp" placeholder="Ex: Gerencianet, BB, Sicoob...">
+
+		  <!-- Proteção contra bots -->
+		  <input type="text" name="_honey" style="display:none">
+
+		  <!-- Desabilita o CAPTCHA padrão -->
+		  <input type="hidden" name="_captcha" value="false">
+
+		  <!-- Redirecionamento após envio -->
+		  <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+		  <button type="submit">Quero testar o PixBee</button>
+		</form>
+  </main>
+
+  <footer>
+    <p>© 2025 PixBee. Todos os direitos reservados. | Seu e-mail será usado apenas para contato sobre o PixBee. Sem spam.</p>
+  </footer>
+</body>
+</html>
